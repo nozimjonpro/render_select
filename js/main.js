@@ -10,17 +10,16 @@ function renderSelect(array, select){
     
     array.forEach(film=>{
         film.genres.forEach(genre=>{
-            if(result.includes(genre)){
+            if(!result.includes(genre)){
                 result.push(genre)
             }
-            console.log(result)
         })
     })
 
     result.forEach(newGenre=>{
         var newOption = document.createElement('option');
         newOption.textContent = newGenre;
-        select.appendChild(newOption)
+        select.appendChild(newOption);
     })
    
     };
