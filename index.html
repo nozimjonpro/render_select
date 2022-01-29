@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <select class="film__select" name="" id=""></select>
+      <ul class="films__list"></ul>
+    <template id="film__template">
+      <li class="film">
+        <h3 class="film__heading">Shazam!</h3>
+        <img
+          class="film__image"
+          src="https://image.tmdb.org/t/p/w500/xnopI5Xtky18MPhK40cZAGAOVeV.jpg"
+          alt="poster"
+          width="300"
+          height="400"
+        />
+        <p class="film__overview">A boy is given the ability to become an adult superhero in times of need with a single magic word.</p>
+        <time class="film__time">1551830400</time>
+        <ul class="film__genres"></ul>
+      </li>
+    </template>
+
+    <template id="genre__template">
+        <li class="film__genre"></li>
+    </template>
+    <script src="js/films.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
